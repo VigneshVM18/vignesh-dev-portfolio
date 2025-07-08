@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { LoadingScreen } from '@/components/LoadingScreen';
 import { ThreeScene } from '@/components/ThreeScene';
@@ -58,7 +59,7 @@ const Index = () => {
       <footer className="py-8 bg-deep-space border-t border-border">
         <div className="container mx-auto px-6 text-center">
           <p className="font-inter text-muted-foreground">
-            © 2024 3D Artist Portfolio. Crafted with passion and precision.
+            © 2024 Front-End Developer Portfolio. Crafted with passion and precision.
           </p>
         </div>
       </footer>

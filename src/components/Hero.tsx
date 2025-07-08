@@ -1,3 +1,4 @@
+
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import profileAvatar from '@/assets/profile-avatar.jpg';
@@ -17,7 +18,7 @@ export const Hero = () => {
             <div className="w-32 h-32 mx-auto rounded-full overflow-hidden relative">
               <img 
                 src={profileAvatar} 
-                alt="3D Artist Profile" 
+                alt="Front-End Developer Profile" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 rounded-full border-2 border-neon-cyan shadow-glow-primary animate-glow-pulse"></div>
@@ -27,17 +28,17 @@ export const Hero = () => {
           {/* Main Headlines */}
           <h1 className="font-orbitron text-5xl md:text-7xl font-black mb-6 leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              3D ARTIST
+              FRONT-END
             </span>
             <br />
-            <span className="text-foreground">PORTFOLIO</span>
+            <span className="text-foreground">DEVELOPER</span>
           </h1>
 
           {/* Bio */}
           <p className="font-inter text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Crafting immersive digital experiences through cutting-edge 3D artistry. 
-            Specialized in character modeling, environment design, and visual storytelling 
-            that pushes the boundaries of creativity.
+            Crafting exceptional user experiences through modern web technologies. 
+            Specialized in React, TypeScript, and responsive design that brings 
+            ideas to life with pixel-perfect precision and smooth interactions.
           </p>
 
           {/* CTA Buttons */}

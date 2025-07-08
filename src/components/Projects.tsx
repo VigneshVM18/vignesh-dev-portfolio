@@ -1,4 +1,5 @@
-import { ExternalLink, Eye } from 'lucide-react';
+
+import { ExternalLink, Eye, Github } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import project1 from '@/assets/project-1.jpg';
@@ -11,51 +12,51 @@ import project6 from '@/assets/project-6.jpg';
 const projects = [
   {
     id: 1,
-    title: "Cyberpunk Cityscape",
-    description: "Futuristic urban environment with dynamic neon lighting and atmospheric effects.",
+    title: "E-Commerce Platform",
+    description: "Modern shopping experience with React, TypeScript, and seamless payment integration.",
     image: project1,
-    technologies: ["Blender", "Substance Painter", "Unreal Engine"],
-    category: "Environment"
+    technologies: ["React", "TypeScript", "Stripe", "Tailwind CSS"],
+    category: "Web App"
   },
   {
     id: 2,
-    title: "Mechanical Guardian",
-    description: "High-detail robot character with intricate mechanical components and texturing.",
+    title: "Dashboard Analytics",
+    description: "Real-time data visualization dashboard with interactive charts and responsive design.",
     image: project2,
-    technologies: ["ZBrush", "Maya", "Arnold"],
-    category: "Character"
+    technologies: ["Next.js", "Chart.js", "React Query", "Framer Motion"],
+    category: "Dashboard"
   },
   {
     id: 3,
-    title: "Tech Product Visualization",
-    description: "Commercial product render showcasing sleek design and premium materials.",
+    title: "Mobile Banking App",
+    description: "Secure banking interface with biometric authentication and smooth animations.",
     image: project3,
-    technologies: ["Cinema 4D", "Octane", "Photoshop"],
-    category: "Product"
+    technologies: ["React Native", "Redux", "Expo", "TypeScript"],
+    category: "Mobile"
   },
   {
     id: 4,
-    title: "Modern Architecture",
-    description: "Contemporary building design with emphasis on light, space, and materials.",
+    title: "SaaS Landing Page",
+    description: "High-converting landing page with modern design and optimized performance.",
     image: project4,
-    technologies: ["3ds Max", "V-Ray", "AutoCAD"],
-    category: "Architecture"
+    technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "MDX"],
+    category: "Website"
   },
   {
     id: 5,
-    title: "Fantasy Creature",
-    description: "Mythical being design with detailed organic textures and magical elements.",
+    title: "Task Management Tool",
+    description: "Collaborative workspace with real-time updates and intuitive drag-and-drop interface.",
     image: project5,
-    technologies: ["ZBrush", "Blender", "Substance Designer"],
-    category: "Character"
+    technologies: ["React", "Socket.io", "Node.js", "MongoDB"],
+    category: "Web App"
   },
   {
     id: 6,
-    title: "Motion Graphics",
-    description: "Dynamic abstract animation with flowing geometric patterns and energy effects.",
+    title: "Portfolio Website",
+    description: "Interactive developer portfolio with 3D elements and smooth scroll animations.",
     image: project6,
-    technologies: ["After Effects", "Cinema 4D", "Redshift"],
-    category: "Animation"
+    technologies: ["React", "Three.js", "GSAP", "Vite"],
+    category: "Portfolio"
   }
 ];
 
@@ -71,8 +72,8 @@ export const Projects = () => {
             </span>
           </h2>
           <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my latest work spanning character design, environment art, 
-            and technical visualization across various industries.
+            A showcase of my latest work spanning web applications, mobile apps, 
+            and interactive experiences across various industries.
           </p>
         </div>
 
@@ -107,8 +108,8 @@ export const Projects = () => {
                       variant="outline"
                       className="border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-primary-foreground"
                     >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Demo
+                      <Github className="w-4 h-4 mr-2" />
+                      Code
                     </Button>
                   </div>
                 </div>

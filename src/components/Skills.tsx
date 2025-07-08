@@ -1,59 +1,60 @@
+
 import { 
-  Box, 
+  Code, 
   Palette, 
   Zap, 
   Layers, 
-  Camera, 
-  Cpu,
-  Brush,
+  Smartphone, 
+  Database,
+  Globe,
   Monitor,
   Gamepad2,
-  Film
+  Wrench
 } from 'lucide-react';
 
 const skillCategories = [
   {
-    title: "3D Modeling",
-    icon: Box,
-    skills: ["Blender", "Maya", "3ds Max", "ZBrush"],
+    title: "Frontend",
+    icon: Code,
+    skills: ["React", "TypeScript", "Next.js", "Vue.js"],
     color: "neon-cyan"
   },
   {
-    title: "Texturing",
+    title: "Styling",
     icon: Palette,
-    skills: ["Substance Painter", "Substance Designer", "Photoshop", "Mari"],
+    skills: ["Tailwind CSS", "Styled Components", "SCSS", "CSS3"],
     color: "neon-purple"
   },
   {
-    title: "Rendering",
+    title: "Build Tools",
     icon: Zap,
-    skills: ["Arnold", "V-Ray", "Octane", "Redshift"],
+    skills: ["Vite", "Webpack", "Rollup", "Parcel"],
     color: "neon-blue"
   },
   {
-    title: "Compositing",
+    title: "State Management",
     icon: Layers,
-    skills: ["After Effects", "Nuke", "Fusion", "DaVinci Resolve"],
+    skills: ["Redux", "Zustand", "React Query", "Context API"],
     color: "neon-cyan"
   },
   {
-    title: "Real-time",
-    icon: Gamepad2,
-    skills: ["Unreal Engine", "Unity", "Marmoset", "Substance Source"],
+    title: "Mobile",
+    icon: Smartphone,
+    skills: ["React Native", "PWA", "Responsive Design", "Touch UI"],
     color: "neon-purple"
   },
   {
-    title: "Animation",
-    icon: Film,
-    skills: ["Cinema 4D", "Houdini", "MotionBuilder", "Keyshot"],
+    title: "Backend",
+    icon: Database,
+    skills: ["Node.js", "Express", "GraphQL", "REST APIs"],
     color: "neon-blue"
   }
 ];
 
 const additionalSkills = [
   { name: "UI/UX Design", level: 85 },
-  { name: "Technical Art", level: 92 },
-  { name: "Concept Art", level: 78 },
+  { name: "Performance Optimization", level: 92 },
+  { name: "Testing & QA", level: 78 },
   { name: "Project Management", level: 88 }
 ];
 
@@ -69,8 +70,8 @@ export const Skills = () => {
             </span>
           </h2>
           <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive toolkit spanning the entire 3D production pipeline, 
-            from concept to final delivery.
+            A comprehensive toolkit spanning the entire web development stack, 
+            from design to deployment and optimization.
           </p>
         </div>
 

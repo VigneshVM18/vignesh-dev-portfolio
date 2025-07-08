@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import logoAnimated from '@/assets/logo-animated.jpg';
 
@@ -32,7 +33,7 @@ export const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
         <div className="relative mb-8">
           <img 
             src={logoAnimated} 
-            alt="Portfolio Logo" 
+            alt="Developer Logo" 
             className="w-32 h-32 mx-auto animate-glow-pulse rounded-full"
           />
           <div className="absolute inset-0 bg-gradient-glow rounded-full animate-pulse"></div>

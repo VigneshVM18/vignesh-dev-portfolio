@@ -1,20 +1,13 @@
-
 import { ExternalLink, Eye, Github } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import project1 from '@/assets/project-1.jpg';
-import project2 from '@/assets/project-2.jpg';
-import project3 from '@/assets/project-3.jpg';
-import project4 from '@/assets/project-4.jpg';
-import project5 from '@/assets/project-5.jpg';
-import project6 from '@/assets/project-6.jpg';
 
 const projects = [
   {
     id: 1,
     title: "Property Find - Real Estate Platform",
     description: "Modern, fully responsive real estate website with interactive UI elements, property search, and filter functionality. Features dynamic property cards and smooth navigation.",
-    image: project1,
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
     technologies: ["React.js", "Tailwind CSS", "JavaScript", "Responsive Design"],
     category: "Web Application",
     period: "Feb 2023 - Present"
@@ -23,7 +16,7 @@ const projects = [
     id: 2,
     title: "Employee Timesheet Tracker",
     description: "Web-based timesheet tracker for internal HR management with data visualization, reporting features, and performance analytics using Chart.js.",
-    image: project2,
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
     technologies: ["Bootstrap", "CSS Grid", "JavaScript", "Chart.js"],
     category: "HR Management",
     period: "Jan 2022 - Feb 2023"
@@ -32,7 +25,7 @@ const projects = [
     id: 3,
     title: "Interactive Property Details",
     description: "Dynamic property showcase with image galleries, feature highlights, contact forms, and client-side routing for seamless user experience.",
-    image: project3,
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
     technologies: ["React Router", "React State", "JavaScript", "Modal Components"],
     category: "Frontend UI",
     period: "2023"
@@ -41,7 +34,7 @@ const projects = [
     id: 4,
     title: "Responsive Real Estate UI",
     description: "Pixel-perfect responsive design implementation ensuring optimal experience across all devices with modern CSS Grid and Flexbox layouts.",
-    image: project4,
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop",
     technologies: ["CSS3", "HTML5", "Responsive Design", "Cross-browser"],
     category: "UI Development",
     period: "2023"
@@ -50,7 +43,7 @@ const projects = [
     id: 5,
     title: "Data Visualization Dashboard",
     description: "Advanced employee productivity analytics with interactive charts, export functionality, and real-time data integration for management insights.",
-    image: project5,
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
     technologies: ["SQL Server", "Chart.js", "JavaScript", "Data Analysis"],
     category: "Analytics",
     period: "2022-2023"
@@ -59,7 +52,7 @@ const projects = [
     id: 6,
     title: "Component-Based Architecture",
     description: "Scalable front-end solutions with reusable React components, state management, and optimized performance for large-scale applications.",
-    image: project6,
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
     technologies: ["React.js", "Component Design", "State Management", "Performance"],
     category: "Architecture",
     period: "2022-Present"

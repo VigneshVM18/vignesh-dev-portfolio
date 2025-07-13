@@ -74,7 +74,7 @@ export const Projects = () => {
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="font-orbitron text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              PROFESSIONAL EXPERIENCE
+              FRONT-END PROJECTS
             </span>
           </h2>
           <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">

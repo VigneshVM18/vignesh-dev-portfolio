@@ -1,3 +1,4 @@
+
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -6,19 +7,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@3dartist.com",
-    href: "mailto:hello@3dartist.com"
+    value: "vmvignesh.dev@outlook.com",
+    href: "mailto:vmvignesh.dev@outlook.com"
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567"
+    value: "+91 8608358331",
+    href: "tel:+918608358331"
   },
   {
     icon: MapPin,
-    label: "Location",
-    value: "San Francisco, CA",
+    label: "Location", 
+    value: "Chennai, India",
     href: "#"
   }
 ];
@@ -52,12 +53,12 @@ export const Contact = () => {
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="font-orbitron text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              GET IN TOUCH
+              CONTACT ME
             </span>
           </h2>
           <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to bring your creative vision to life? Let's collaborate and create 
-            something extraordinary together.
+            Ready to collaborate on your next front-end project? Let's connect and build 
+            something amazing together.
           </p>
         </div>
 

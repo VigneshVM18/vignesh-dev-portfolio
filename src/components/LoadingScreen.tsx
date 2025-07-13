@@ -33,16 +33,19 @@ export const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
         <div className="relative mb-8">
           <img 
             src={logoAnimated} 
-            alt="Developer Logo" 
+            alt="Vignesh VM Logo" 
             className="w-32 h-32 mx-auto animate-glow-pulse rounded-full"
           />
           <div className="absolute inset-0 bg-gradient-glow rounded-full animate-pulse"></div>
         </div>
 
         {/* Loading Text */}
-        <h1 className="font-orbitron text-2xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-          LOADING PORTFOLIO
+        <h1 className="font-orbitron text-2xl font-bold mb-2 bg-gradient-primary bg-clip-text text-transparent">
+          VIGNESH VM
         </h1>
+        <p className="font-orbitron text-lg font-medium mb-4 text-neon-cyan">
+          FRONT-END DEVELOPER
+        </p>
 
         {/* Progress Bar */}
         <div className="w-64 h-1 bg-muted rounded-full overflow-hidden mx-auto mb-4">
@@ -54,7 +57,7 @@ export const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
 
         {/* Progress Percentage */}
         <div className="font-inter text-sm text-muted-foreground">
-          {progress}%
+          Loading Portfolio... {progress}%
         </div>
       </div>
     </div>

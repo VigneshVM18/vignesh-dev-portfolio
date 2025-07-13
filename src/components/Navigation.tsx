@@ -60,7 +60,7 @@ export const Navigation = () => {
             {/* Logo */}
             <div className="font-orbitron text-xl font-bold">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                3D ARTIST
+                VIGNESH VM
               </span>
             </div>
 
@@ -109,7 +109,7 @@ export const Navigation = () => {
               <div className="flex items-center justify-between mb-6">
                 <div className="font-orbitron text-lg font-bold">
                   <span className="bg-gradient-primary bg-clip-text text-transparent">
-                    MENU
+                    VIGNESH VM
                   </span>
                 </div>
                 <Button

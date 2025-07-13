@@ -14,48 +14,48 @@ import {
 
 const skillCategories = [
   {
-    title: "Frontend",
+    title: "Frontend Frameworks",
     icon: Code,
-    skills: ["React", "TypeScript", "Next.js", "Vue.js"],
+    skills: ["React.js", "Bootstrap", "Tailwind CSS", "JavaScript ES6+"],
     color: "neon-cyan"
   },
   {
-    title: "Styling",
+    title: "Programming Languages",
     icon: Palette,
-    skills: ["Tailwind CSS", "Styled Components", "SCSS", "CSS3"],
+    skills: ["HTML5", "CSS3", "JavaScript", "Python (Basic)"],
     color: "neon-purple"
   },
   {
-    title: "Build Tools",
+    title: "Development Tools",
     icon: Zap,
-    skills: ["Vite", "Webpack", "Rollup", "Parcel"],
+    skills: ["Visual Studio Code", "GitHub", "Web Flow", "Figma"],
     color: "neon-blue"
   },
   {
-    title: "State Management",
-    icon: Layers,
-    skills: ["Redux", "Zustand", "React Query", "Context API"],
+    title: "Database & Backend",
+    icon: Database,
+    skills: ["SQL Server", "MySQL", "REST API", "JSON"],
     color: "neon-cyan"
   },
   {
-    title: "Mobile",
-    icon: Smartphone,
-    skills: ["React Native", "PWA", "Responsive Design", "Touch UI"],
+    title: "Design & UI/UX",
+    icon: Monitor,
+    skills: ["Figma", "Chart.js", "Git", "Component Architecture"],
     color: "neon-purple"
   },
   {
-    title: "Backend",
-    icon: Database,
-    skills: ["Node.js", "Express", "GraphQL", "REST APIs"],
+    title: "Specializations",
+    icon: Layers,
+    skills: ["Responsive Design", "State Management", "Performance Optimization", "User Experience"],
     color: "neon-blue"
   }
 ];
 
 const additionalSkills = [
-  { name: "UI/UX Design", level: 85 },
-  { name: "Performance Optimization", level: 92 },
-  { name: "Testing & QA", level: 78 },
-  { name: "Project Management", level: 88 }
+  { name: "React.js Development", level: 92 },
+  { name: "Responsive Web Design", level: 95 },
+  { name: "JavaScript & ES6+", level: 88 },
+  { name: "UI/UX Implementation", level: 85 }
 ];
 
 export const Skills = () => {
@@ -66,12 +66,12 @@ export const Skills = () => {
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="font-orbitron text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              SKILLS & EXPERTISE
+              TECHNICAL SKILLS & EXPERTISE
             </span>
           </h2>
           <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive toolkit spanning the entire web development stack, 
-            from design to deployment and optimization.
+            Comprehensive front-end development skills with expertise in modern web technologies, 
+            responsive design, and scalable application architecture.
           </p>
         </div>
 
@@ -112,7 +112,7 @@ export const Skills = () => {
         {/* Additional Skills with Progress Bars */}
         <div className="max-w-4xl mx-auto">
           <h3 className="font-orbitron text-2xl font-bold text-center mb-8 text-foreground">
-            Additional Competencies
+            Core Competencies
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -18,7 +18,7 @@ export const Hero = () => {
             <div className="w-32 h-32 mx-auto rounded-full overflow-hidden relative">
               <img 
                 src={profileAvatar} 
-                alt="Front-End Developer Profile" 
+                alt="Vignesh VM - Front-End Developer Profile" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 rounded-full border-2 border-neon-cyan shadow-glow-primary animate-glow-pulse"></div>
@@ -28,18 +28,28 @@ export const Hero = () => {
           {/* Main Headlines */}
           <h1 className="font-orbitron text-5xl md:text-7xl font-black mb-6 leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              FRONT-END
+              VIGNESH VM
             </span>
             <br />
-            <span className="text-foreground">DEVELOPER</span>
+            <span className="text-foreground text-3xl md:text-4xl">FRONT-END DEVELOPER</span>
           </h1>
 
           {/* Bio */}
-          <p className="font-inter text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Crafting exceptional user experiences through modern web technologies. 
-            Specialized in React, TypeScript, and responsive design that brings 
-            ideas to life with pixel-perfect precision and smooth interactions.
+          <p className="font-inter text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+            Highly motivated and detail-oriented Front-End Developer with over 2 years of hands-on experience 
+            building modern, responsive, and user-centric web applications. Proficient in HTML5, CSS3, 
+            Tailwind CSS, JavaScript (ES6+), and React.js, with expertise in component-based architecture 
+            and creating scalable front-end solutions.
           </p>
+
+          {/* Contact Info */}
+          <div className="flex flex-col sm:flex-row gap-2 justify-center items-center mb-8 text-sm text-muted-foreground">
+            <span>+91 8608358331</span>
+            <span className="hidden sm:inline">•</span>
+            <span>vmvignesh.dev@outlook.com</span>
+            <span className="hidden sm:inline">•</span>
+            <span>Chennai, India</span>
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

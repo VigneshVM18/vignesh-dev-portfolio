@@ -12,51 +12,57 @@ import project6 from '@/assets/project-6.jpg';
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Modern shopping experience with React, TypeScript, and seamless payment integration.",
+    title: "Property Find - Real Estate Platform",
+    description: "Modern, fully responsive real estate website with interactive UI elements, property search, and filter functionality. Features dynamic property cards and smooth navigation.",
     image: project1,
-    technologies: ["React", "TypeScript", "Stripe", "Tailwind CSS"],
-    category: "Web App"
+    technologies: ["React.js", "Tailwind CSS", "JavaScript", "Responsive Design"],
+    category: "Web Application",
+    period: "Feb 2023 - Present"
   },
   {
     id: 2,
-    title: "Dashboard Analytics",
-    description: "Real-time data visualization dashboard with interactive charts and responsive design.",
+    title: "Employee Timesheet Tracker",
+    description: "Web-based timesheet tracker for internal HR management with data visualization, reporting features, and performance analytics using Chart.js.",
     image: project2,
-    technologies: ["Next.js", "Chart.js", "React Query", "Framer Motion"],
-    category: "Dashboard"
+    technologies: ["Bootstrap", "CSS Grid", "JavaScript", "Chart.js"],
+    category: "HR Management",
+    period: "Jan 2022 - Feb 2023"
   },
   {
     id: 3,
-    title: "Mobile Banking App",
-    description: "Secure banking interface with biometric authentication and smooth animations.",
+    title: "Interactive Property Details",
+    description: "Dynamic property showcase with image galleries, feature highlights, contact forms, and client-side routing for seamless user experience.",
     image: project3,
-    technologies: ["React Native", "Redux", "Expo", "TypeScript"],
-    category: "Mobile"
+    technologies: ["React Router", "React State", "JavaScript", "Modal Components"],
+    category: "Frontend UI",
+    period: "2023"
   },
   {
     id: 4,
-    title: "SaaS Landing Page",
-    description: "High-converting landing page with modern design and optimized performance.",
+    title: "Responsive Real Estate UI",
+    description: "Pixel-perfect responsive design implementation ensuring optimal experience across all devices with modern CSS Grid and Flexbox layouts.",
     image: project4,
-    technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "MDX"],
-    category: "Website"
+    technologies: ["CSS3", "HTML5", "Responsive Design", "Cross-browser"],
+    category: "UI Development",
+    period: "2023"
   },
   {
     id: 5,
-    title: "Task Management Tool",
-    description: "Collaborative workspace with real-time updates and intuitive drag-and-drop interface.",
+    title: "Data Visualization Dashboard",
+    description: "Advanced employee productivity analytics with interactive charts, export functionality, and real-time data integration for management insights.",
     image: project5,
-    technologies: ["React", "Socket.io", "Node.js", "MongoDB"],
-    category: "Web App"
+    technologies: ["SQL Server", "Chart.js", "JavaScript", "Data Analysis"],
+    category: "Analytics",
+    period: "2022-2023"
   },
   {
     id: 6,
-    title: "Portfolio Website",
-    description: "Interactive developer portfolio with 3D elements and smooth scroll animations.",
+    title: "Component-Based Architecture",
+    description: "Scalable front-end solutions with reusable React components, state management, and optimized performance for large-scale applications.",
     image: project6,
-    technologies: ["React", "Three.js", "GSAP", "Vite"],
-    category: "Portfolio"
+    technologies: ["React.js", "Component Design", "State Management", "Performance"],
+    category: "Architecture",
+    period: "2022-Present"
   }
 ];
 
@@ -68,12 +74,12 @@ export const Projects = () => {
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="font-orbitron text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              FEATURED PROJECTS
+              PROFESSIONAL EXPERIENCE
             </span>
           </h2>
           <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my latest work spanning web applications, mobile apps, 
-            and interactive experiences across various industries.
+            Showcasing real-world projects and professional experience in front-end development, 
+            from responsive web applications to data visualization solutions.
           </p>
         </div>
 
@@ -120,13 +126,20 @@ export const Projects = () => {
                     {project.category}
                   </span>
                 </div>
+
+                {/* Period Badge */}
+                <div className="absolute top-4 right-4">
+                  <span className="px-2 py-1 bg-glass backdrop-blur-sm text-xs font-medium text-neon-purple border border-neon-purple/30 rounded-full">
+                    {project.period}
+                  </span>
+                </div>
               </div>
 
               <CardContent className="p-6">
                 <h3 className="font-orbitron text-xl font-bold mb-2 text-foreground">
                   {project.title}
                 </h3>
-                <p className="font-inter text-muted-foreground mb-4 leading-relaxed">
+                <p className="font-inter text-muted-foreground mb-4 leading-relaxed text-sm">
                   {project.description}
                 </p>
                 

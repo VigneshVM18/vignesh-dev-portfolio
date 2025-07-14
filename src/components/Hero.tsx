@@ -1,7 +1,6 @@
 
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profileAvatar from '@/assets/profile-avatar.jpg';
 
 export const Hero = () => {
   const scrollToProjects = () => {
@@ -17,7 +16,7 @@ export const Hero = () => {
           <div className="relative inline-block mb-8">
             <div className="w-32 h-32 mx-auto rounded-full overflow-hidden relative">
               <img 
-                src={profileAvatar} 
+                src="/lovable-uploads/dc861e69-cf0d-4cf6-a03d-05657902e6b8.png" 
                 alt="Vignesh VM - Front-End Developer Profile" 
                 className="w-full h-full object-cover"
               />

@@ -34,7 +34,7 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/vmvigneshdev",
     color: "hover:text-neon-blue"
   },
   {

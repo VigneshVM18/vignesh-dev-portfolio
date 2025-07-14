@@ -43,7 +43,7 @@ export const Hero = () => {
 
           {/* Contact Info */}
           <div className="flex flex-col sm:flex-row gap-2 justify-center items-center mb-8 text-sm text-muted-foreground">
-            <span>+91 8608358331</span>
+            <span>91 8608358233</span>
             <span className="hidden sm:inline">•</span>
             <span>vmvignesh.dev@outlook.com</span>
             <span className="hidden sm:inline">•</span>

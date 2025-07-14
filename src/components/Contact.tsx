@@ -1,7 +1,10 @@
 
+import { useState } from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
 
 const contactInfo = [
   {
@@ -46,6 +49,68 @@ const socialLinks = [
 ];
 
 export const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      const templateParams = {
+        from_name: `${formData.firstName} ${formData.lastName}`,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_name: 'Vignesh VM'
+      };
+
+      await emailjs.send(
+        'service_1774l0a',    // Service ID
+        'template_3l6mnqg',   // Template ID
+        templateParams,
+        'jGMh4QAOO3FnRqLX_'   // Public Key
+      );
+
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for your message. I'll get back to you soon.",
+      });
+
+      // Reset form
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or contact me directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-20 bg-background relative">
       <div className="container mx-auto px-6">
@@ -127,7 +192,7 @@ export const Contact = () => {
                   Send Message
                 </h3>
                 
-                <form className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block font-inter text-sm font-medium text-foreground mb-2">
@@ -135,6 +200,10 @@ export const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        name="firstName"
+                        value={formData.firstName}
+                        onChange={handleInputChange}
+                        required
                         className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:border-neon-cyan focus:ring-2 focus:ring-neon-cyan/20 transition-colors duration-300 text-foreground"
                         placeholder="John"
                       />
@@ -145,6 +214,10 @@ export const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleInputChange}
+                        required
                         className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:border-neon-cyan focus:ring-2 focus:ring-neon-cyan/20 transition-colors duration-300 text-foreground"
                         placeholder="Doe"
                       />
@@ -157,6 +230,10 @@ export const Contact = () => {
                     </label>
                     <input
                       type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
                       className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:border-neon-cyan focus:ring-2 focus:ring-neon-cyan/20 transition-colors duration-300 text-foreground"
                       placeholder="john@example.com"
                     />
@@ -168,6 +245,10 @@ export const Contact = () => {
                     </label>
                     <input
                       type="text"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleInputChange}
+                      required
                       className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:border-neon-cyan focus:ring-2 focus:ring-neon-cyan/20 transition-colors duration-300 text-foreground"
                       placeholder="Project Collaboration"
                     />
@@ -178,14 +259,22 @@ export const Contact = () => {
                       Message
                     </label>
                     <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      required
                       rows={4}
                       className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:border-neon-cyan focus:ring-2 focus:ring-neon-cyan/20 transition-colors duration-300 text-foreground resize-none"
                       placeholder="Tell me about your project..."
                     />
                   </div>
                   
-                  <Button className="w-full bg-gradient-primary hover:shadow-glow-primary text-primary-foreground font-semibold py-3 rounded-lg transition-all duration-300">
-                    Send Message
+                  <Button 
+                    type="submit"
+                    disabled={isLoading}
+                    className="w-full bg-gradient-primary hover:shadow-glow-primary text-primary-foreground font-semibold py-3 rounded-lg transition-all duration-300 disabled:opacity-50"
+                  >
+                    {isLoading ? 'Sending...' : 'Send Message'}
                   </Button>
                 </form>
               </CardContent>
